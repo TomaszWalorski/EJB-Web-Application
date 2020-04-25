@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Club CRUD menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="CreateFootballerServlet" method="POST">
+            Create
+            <input type="text" name="fullName" placeholder="Footballer name" />
+            <input type="text" name="clubNumber" placeholder="Footballer club number" />
+            <input type="text" name="birthDate" placeholder="dd.mm.yyyy" />
+            <input type="text" name="playingPosition" placeholder="Playing position" />
+            <input type="text" name="clubId" placeholder="Club ID" />
+            <input type="submit" value="Submit" />
+        </form>
+        <form action="ReadClubyServlet" method="POST">
+            Read
+            <input type="submit" value="Submit" />
+        </form>
+        <form action="UpdateClubServlet" method="POST">
+            Update
+            Fill only fields which you want to change.
+            <input type="text" name="footballerId" placeholder="Footballer ID" />
+            <input type="text" name="fullName" placeholder="Footballer name" />
+            <input type="text" name="clubNumber" placeholder="Footballer club number" />
+            <input type="text" name="birthDate" placeholder="dd.mm.yyyy" />
+            <input type="text" name="playingPosition" placeholder="Playing position" />
+            <input type="text" name="clubId" placeholder="Club ID" />
+            <input type="submit" value="Submit" />
+        </form>
+        <form action="DeleteCityServlet" method="POST">
+            Delete
+            <input type="text" name="footballerId" placeholder="Footballer ID" />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
